@@ -2,9 +2,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 
 :root{
-    --color-primario: #000000;
-    --color-secundario: #F6F6F6;
-    --color-terciario: #22D4FD;
+    --color-primario: #3D3D3D;
+    --color-secundario: #FFFAEC;
+    /*--color-terciario: #22D4FD;*/
+    --color-terciario: #578E7E;
     --color-encabezado-hover: #007BFF;
     --color-presentacion-enlaces-hover: #272727;
 
@@ -32,12 +33,12 @@ body{
     display: flex;
     justify-content: start;
     align-items: center;
-    gap: 80px;
+    gap: 5rem;
 }
 
 .encabezado__menu__link{
     font-family: var(--fuente-montserrat);
-    font-size: 24px;
+    font-size: 1.5rem;
     font-weight: 600;
     color: var(--color-terciario);
     /*margin: 0 10px;
@@ -55,17 +56,18 @@ body{
     /*margin: 12.5%;*/
     padding: 11% 15%;
     justify-content: space-between;
+    gap: 82px;
 }
 
 .presentacion__contenido{
-    width: 615px;
+    width: 50%;
     display: flex;
     flex-direction: column;
-    gap: 40px;
+    gap: 2.5rem;
 }
 
 .presentacion__contenido__titulo{
-    font-size: 36px;
+    font-size: 2.25rem;
     font-family: var(--fuente-krona);
 }
 
@@ -74,7 +76,7 @@ body{
 }
 
 .presentacion__contenido__texto{
-    font-size: 24px;
+    font-size: 1.5rem;
     font-family: var(--fuente-montserrat);
 }
 
@@ -83,23 +85,23 @@ body{
     justify-content: space-between;
     flex-direction: column;
     align-items: center;
-    gap: 32px;
+    gap: 2rem;
 }
 
 .presentacion__enlaces__subtitulos{
     font-family: var(--fuente-krona);
-    font-size: 24px;
+    font-size: 1.5rem;
     font-weight: 400;
 }
 
 .presentacion__enlaces__link{
-    width: 378px;
+    width: 50%;
     font-family: var(--fuente-montserrat);
     color: var(--color-secundario);
     text-align: center;
     padding: 21.5px 0;
     border-radius: 8px;
-    font-size: 24px;
+    font-size: 1.5rem;
     font-weight: 600;
     text-decoration: none;
     border: 2px solid var(--color-terciario);
@@ -116,13 +118,17 @@ body{
     transition: transform 0.2s ease-in-out;*/
 }
 
+.presentacion__imagen{
+    width: 50%;
+}
+
 .footer{
     background-color: var(--color-terciario);
     padding: 24px;
     color: var(--color-primario);
     text-align: center;
     font-family: var(--fuente-montserrat);
-    font-size: 24px;
+    font-size: 1.5rem;
     font-weight: 400;
 }
 
@@ -131,7 +137,26 @@ body{
     color: var(--color-terciario);
 }
 
+@media (max-width: 1200px) {
+    
+    .encabezado{
+        padding: 10%;
+    }
 
+    .encabezado__menu {
+        justify-content: center;
+    }
+
+    .presentacion{
+        flex-direction: column-reverse;
+        padding: 5%;
+    }
+
+    .presentacion__contenido{
+        width: auto;
+    }
+
+}
 
 
 
