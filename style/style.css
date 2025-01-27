@@ -4,8 +4,7 @@
 :root{
     --color-primario: #3D3D3D;
     --color-secundario: #FFFAEC;
-    /*--color-terciario: #22D4FD;*/
-    --color-terciario: #578E7E;
+    --color-terciario: #22D4FD;
     --color-encabezado-hover: #007BFF;
     --color-presentacion-enlaces-hover: #272727;
 
@@ -158,7 +157,24 @@ body{
 
 }
 
+@media (max-width: 450px) {
 
+    .encabezado__menu__link{
+        font-size: 1rem;
+    }
+    
+    .presentacion__contenido__titulo{
+        font-size: 2rem;
+    }
+
+    .presentacion__contenido__texto{
+        font-size: 1.2rem;
+    }
+
+    .presentacion__enlaces__link{
+        font-size: 1.2rem;
+    }
+}
 
 
 
